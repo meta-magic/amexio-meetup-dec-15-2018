@@ -1,0 +1,32 @@
+.accordion {
+  background-color: $accordionBGColor;
+  color: $accordionColor;
+}
+.accordion .active-accordion, .accordion:hover {
+  background-color: $accordionActiveBGColor;
+  color: $accordionActiveColor;
+}
+
+.accordion:after {
+  color: red;
+}
+
+
+
+.panel {
+  background-color: $accordionPanelBGColor;
+  color: $accordionPanelColor;
+}
+
+/** Transparent Styling **/
+.accordion-transparent{
+  background:$accordionTransparentBG;
+}
+.accordion .amexio-accordion-header{
+  color:$componentHeaderFontColor;
+}
+
+.accordion-transparent:after {
+  color: red;
+}
+

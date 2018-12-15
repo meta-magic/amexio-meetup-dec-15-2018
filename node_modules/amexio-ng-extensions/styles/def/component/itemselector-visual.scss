@@ -1,0 +1,29 @@
+
+.item-selector-action-panel{
+
+  .actionbar{
+
+    .actionbarinner{
+    .action{
+        background-color: $itemselectorActionBGColor;
+        color: $itemselectorActionColor;
+      }
+
+      .actiondisable{
+        background-color: $itemselectorActionDisableBGColor;
+      }
+    }
+  }
+}
+
+.itemselector-list-active{
+  background-color: $itemselectorListActiveBGColor;
+  //color : $itemselectorListActiveColor;
+}  
+  
+.itemselector-list:hover{
+    background-color: $itemselectorListHoverBGColor;
+    //color : $itemselectorListHoverColor;
+}
+  
+

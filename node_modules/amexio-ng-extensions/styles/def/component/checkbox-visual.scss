@@ -1,0 +1,22 @@
+
+
+.input-box .default {
+  background: $checkboxBGColor;
+}
+
+.input-box .active{
+  background: $checkboxActiveBGColor;
+  color: $checkboxActiveColor;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.input-box-container input:checked ~ .input-box-checkbox-label {
+  background-color: $checkboxActiveBGColor;
+}
+
+.checkbox-disable{
+  opacity: 0.55;
+  pointer-events: none;
+  background-color: $checkboxDisableBGColor;
+}

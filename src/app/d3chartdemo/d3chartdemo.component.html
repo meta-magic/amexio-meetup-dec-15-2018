@@ -1,0 +1,39 @@
+<amexio-drillable>
+    <amexio-d3-chart-bar
+  [title]="'D3 Bar Chart Demo'"
+  [legend]="true"
+  [http-url]="'https://restapi.amexio.org:8991/rest-sample-app/api/countrychart/findall'"
+  [http-method]="'get'"
+  [level]="1"
+  [target]="2"
+  [drillable-data] = "drillabledata"
+  [horizontal-scale]="true"
+  [label-color]="'white'"
+  [label]="true"
+ >
+</amexio-d3-chart-bar>
+
+ <amexio-d3-chart-bar
+ [title] ="'state Chart'" 
+ [http-url] ="'https://restapi.amexio.org:8991/rest-sample-app/api/state/findbycountry'" 
+ [http-method] ="'post'" 
+ [drillable-data]= "drillabledata"
+ [level] = 2
+ [target] = 3>
+ </amexio-d3-chart-bar>  
+
+ <amexio-d3-chart-donut
+   [title]="'City Chart'"
+   
+   [legend]="true"
+   [http-url]="'https://restapi.amexio.org:8991/rest-sample-app/api/state/findbycountryliteracy'"
+   [http-method]="'post'"
+   [level]="2"
+   [target]="3"
+   [drillable-data]="drillabledata"
+   [label-color]="'red'"
+   [label]="true"
+   (onChartClick)="functionName($event)"
+   (onLegendClick)="functionName($event)">
+ </amexio-d3-chart-donut>
+</amexio-drillable>

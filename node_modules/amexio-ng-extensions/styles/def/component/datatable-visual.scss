@@ -1,0 +1,60 @@
+
+.datatable-height::-webkit-scrollbar-track
+{
+  background-color:$datatableScrollBG;
+}
+
+.datagrid amexio-datagrid-header > *{
+  padding: 3px
+}
+
+.datatable-height::-webkit-scrollbar
+{
+  background-color: $datatableScrollBG;
+}
+
+.datatable-height::-webkit-scrollbar-thumb
+{
+  background-color: $datatableScrollThumbBG;
+}
+
+.datatable .datatable-header{
+  background-color: $datatableHeaderBGColor;
+  color : $datatableHeaderColor;
+}
+
+.datatable .datatable-row:hover{
+  background-color: $datatableRowHoverBG;
+  cursor: pointer;
+  @mixin for_row_hover() {
+    $datatableRowHover: false !default;
+
+    @if $datatableRowHover {
+      color: $datatableRowHover;
+    }
+  }
+  @mixin for_row_bold() {
+    $datatableFontBold: false !default;
+
+    @if $datatableFontBold {
+      font-weight :$datatableFontBold;
+    }
+  }
+}
+
+.datatable .datatable-row-active {
+  background-color: $datatableRowActiveBG !important;
+  @mixin for_row_active() {
+    $datatableRowActive: false !default;
+
+    @if $datatableRowActive {
+      color: $datatableRowActive;
+
+    }
+  }
+}
+ 
+
+.datatable-row:nth-child(odd){
+  background-color: $datatableOddRowColor;
+}
